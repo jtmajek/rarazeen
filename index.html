@@ -66,24 +66,10 @@
     <form action="https://formspree.io/f/mkogalkd" method="POST">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <textarea name="message" rows="5" name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
-        <p id="success-msg" style="display:none; color:green; margin-top:10px;">
-            Thanks! Your message has been sent.
-        </p>
+        <p id="success-msg" style="display:none;">Thanks! Your message has been sent.</p>
     </form>
-
-    <script>
-        const form = document.querySelector("#contact form");
-        const successMsg = document.getElementById("success-msg");
-
-        form.addEventListener("submit", function () {
-            setTimeout(() => {
-                successMsg.style.display = "block";
-                form.reset();
-            }, 500);
-        });
-    </script>
 </section>
 
 
