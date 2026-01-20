@@ -119,4 +119,26 @@ footer {
     text-align: center;
     padding: 15px;
 }
+.box {
+    background: #cfe2ff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.service-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.service-btn:hover {
+    background: #004999;
+}
+
 
