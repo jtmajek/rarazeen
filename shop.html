@@ -1,1 +1,42 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Shop</h1>
+
+  <!-- PRODUCTS -->
+  <div class="product">
+    <h3>Whole Milk</h3>
+    <p>$10</p>
+    <button onclick="addToCart('Whole Milk', 10)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <h3>Eggs</h3>
+    <p>$15</p>
+    <button onclick="addToCart('Eggs', 15)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <h3>Goats</h3>
+    <p>$50</p>
+    <button onclick="addToCart('Goats', 50)">Add to Cart</button>
+  </div>
+
+  <h2>Shopping Cart</h2>
+  <ul id="cart"></ul>
+  <p><strong>Total: $<span id="total">0</span></strong></p>
+  <button onclick="clearCart()">Clear Cart</button>
+
+  <br><br>
+  <a href="index.html">⬅ Back to Home</a>
+
+  <script src="cart.js"></script>
+</body>
+</html>
